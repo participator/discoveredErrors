@@ -1,0 +1,14 @@
+div {
+    border: 1px solid black;
+    margin: 1em 0;
+  }
+  
+  div:nth-of-type(1)::before {
+    color: green;
+    content: 'As Expected';
+  }
+  
+  div:nth-of-type(n+2)::before {
+    color: red;
+    content: 'Not As Expected';
+  }
